@@ -10,7 +10,7 @@ class NextApp extends App {
     return (
       <React.Fragment>
         <Head>
-          <title>OK</title>
+          <title>Spectrum</title>
         </Head>
         <Component {...pageProps} />
       </React.Fragment>

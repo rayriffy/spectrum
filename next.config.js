@@ -1,6 +1,7 @@
 const withPlugins = require('next-compose-plugins')
 
 const withSass = require('@zeit/next-sass')
+const withStylus = require('@zeit/next-stylus')
 
 const withPreact = (nextConfig = {}) => {
   return Object.assign({}, nextConfig, {
@@ -34,6 +35,7 @@ const withPreact = (nextConfig = {}) => {
 module.exports = withPlugins(
   [
     [withPreact],
+    [withStylus],
     [
       withSass,
       {
