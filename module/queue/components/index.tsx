@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { FaStream } from 'react-icons/fa'
+
 export const Queue: React.FC = props => {
   const {} = props
 
@@ -9,7 +11,9 @@ export const Queue: React.FC = props => {
         <b>Next:</b>She Saw The Future
       </div>
       <div className='horizontal-spacer' />
-      <div className='playlist-button' />
+      <div className='playlist-button'>
+        <FaStream />
+      </div>
     </div>
   )
 }

@@ -139,4 +139,11 @@ body
   .controller > .queue > .playlist-button
     min-width 50px
     height 50px
+    display flex
+    justify-content center
+    align-items center
+    cursor pointer
     getCard(theme, 'convex', borderRadius 999px)
+
+  .controller > .queue > .playlist-button:active
+    getCard(theme, 'flat', borderRadius 999px)

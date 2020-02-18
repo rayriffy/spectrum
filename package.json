@@ -17,6 +17,7 @@
     "test:lint": "tslint 'src/**/*.{ts,tsx}'"
   },
   "dependencies": {
+    "@types/react-icons": "^3.0.0",
     "@zeit/next-stylus": "^1.0.1",
     "autoprefixer": "^9.7.4",
     "isomorphic-unfetch": "^3.0.0",
@@ -30,6 +31,7 @@
     "preact": "^10.3.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-icons": "^3.9.0",
     "stylus": "^0.54.7"
   },
   "devDependencies": {
