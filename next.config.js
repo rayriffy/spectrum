@@ -1,6 +1,7 @@
 const withPlugins = require('next-compose-plugins')
 
 const withStylus = require('@zeit/next-stylus')
+const poststylus = require('poststylus')
 
 const withPreact = (nextConfig = {}) => {
   return Object.assign({}, nextConfig, {
@@ -34,7 +35,17 @@ const withPreact = (nextConfig = {}) => {
 module.exports = withPlugins(
   [
     [withPreact],
-    [withStylus],
+    [withStylus, {
+      stylusLoaderOptions: {
+        use: [
+          poststylus([
+            require('autoprefixer'),
+            require('postcss-css-variables'),
+            require('postcss-easings')
+          ]),
+        ],
+      }
+    }],
   ],
   {}
 )
