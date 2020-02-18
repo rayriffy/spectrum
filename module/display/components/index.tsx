@@ -6,7 +6,9 @@ export const Display: React.FC = props => {
   return (
     <div className='display'>
       <div className='cover'>
-        <img src='https://halozy.com/wp-content/uploads/hlzy-0029_jacket.jpg' />
+        <div>
+          <img src='https://halozy.com/wp-content/uploads/hlzy-0029_jacket.jpg' />
+        </div>
       </div>
       <div className='meta'>
         <h3>(In)Sane</h3>
