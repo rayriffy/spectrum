@@ -1,0 +1,41 @@
+getBackground(theme)
+  if theme == 'light'
+    background-color #ecf0f3
+  else
+    getBackground('light')
+    
+getShadow(size = 300, colorSet, isInset = false)
+  if isInset
+    box-shadow inset (size / 10)px (size / 10)px (size / 5)px colorSet[0], inset (size / 10 * -1)px (size / 10 * -1)px (size / 5)px colorSet[1]
+  else
+    box-shadow (size / 10)px (size / 10)px (size / 5)px colorSet[0], (size / 10 * -1)px (size / 10 * -1)px (size / 5)px colorSet[1]
+
+getCard(theme, shape, size = 300)
+  if theme == 'light'
+    getShadow(size, #c9cccf #ffffff, shape == 'pressed')
+    if shape == 'flat'
+      background-color #ecf0f3
+    else if shape == 'concave'
+      background-color linear-gradient(145deg, #fdffff, #d4d8db)
+    else if shape == 'convex'
+      background-color linear-gradient(145deg, #d4d8db, #fdffff)
+    else if shape == 'pressed'
+      background-color #ecf0f3
+    else
+      getCard('light', 'flat')
+  else
+    getCard('light', 'flat')
+
+getFont(style = 'body')
+  font-family -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'
+
+  if style == 'heading'
+    line-height 1.25
+    font-weight bold
+
+body
+  getFont()
+  getBackground('light')
+
+  .card
+    getCard('light', 'convex')

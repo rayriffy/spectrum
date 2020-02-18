@@ -1,0 +1,43 @@
+{
+  "name": "spectrum",
+  "version": "1.0.0",
+  "description": "MusicKit web player",
+  "main": "index.js",
+  "repository": "https://github.com/rayriffy/spectrum",
+  "author": "Phumrapee Limpianchop <contact@rayriffy.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
+    "test:types": "tsc",
+    "test:lint": "tslint 'src/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-stylus": "^1.0.1",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "^9.2.1",
+    "next-compose-plugins": "^2.2.0",
+    "next-offline": "^5.0.0",
+    "node-sass": "^4.13.1",
+    "preact": "^10.3.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "stylus": "^0.54.7"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "@types/react": "^16.9.20",
+    "prettier": "^1.19.1",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-plugin-prettier": "^2.1.0",
+    "tslint-react": "^4.2.0",
+    "typescript": "^3.7.5"
+  }
+}
