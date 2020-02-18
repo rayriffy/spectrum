@@ -11,6 +11,10 @@ class NextApp extends App {
       <React.Fragment>
         <Head>
           <title>Spectrum</title>
+          <link
+            rel='stylesheet'
+            href='https://fonts.googleapis.com/css?family=Google+Sans&display=swap'
+          />
         </Head>
         <Component {...pageProps} />
       </React.Fragment>
