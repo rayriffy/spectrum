@@ -63,9 +63,12 @@ body
     margin 0
 
   .container
-    height calc(100% - 80px)
-    padding 40px 20px
+    height calc(100% - 60px)
+    padding 40px 20px 20px 20px
     max-width 500px
+    @media screen and (min-width: 500px)
+      height calc(100% - 80px)
+      padding 40px 20px
 
   .flex
     display flex
@@ -99,7 +102,9 @@ body
   .controller > .command-center
     display flex
     justify-content space-between
-    padding 0 40px
+    padding 20px 40px
+    @media screen and (min-width: 500px)
+      padding 20px 60px
 
   .controller > .command-center > .command
     width 60px
@@ -125,12 +130,16 @@ body
     display flex
 
   .controller > .queue > .next
-    height 50px
+    height 40px
     width 100%
     getCard(theme, 'flat')
     display flex
     align-items center
     padding-left 20px
+    font-size 14px
+    @media screen and (min-width: 500px)
+      height 50px
+      font-size 16px
 
   .controller > .queue > .next > b
     font-weight 700
@@ -140,13 +149,16 @@ body
     margin 0 10px
 
   .controller > .queue > .playlist-button
-    min-width 50px
-    height 50px
+    min-width 40px
+    height 40px
     display flex
     justify-content center
     align-items center
     cursor pointer
     getCard(theme, 'convex', borderRadius 999px)
+    @media screen and (min-width: 500px)
+      min-width 50px
+      height 50px
 
   .controller > .queue > .playlist-button:active
     getCard(theme, 'flat', borderRadius 999px)
