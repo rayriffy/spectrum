@@ -63,30 +63,33 @@ body
     margin 0
     
   .title
-    height 40px
+    @media screen and (max-height: 720px) and (min-width: 500px)
+      width 100%
 
   .container
-    height calc(100% - 100px)
+    height calc(100% - 40px)
     padding 40px 20px 20px 20px
     max-width 500px
     @media screen and (min-width: 500px)
-      height calc(100% - 120px)
+      height calc(100% - 60px)
       padding 40px 20px
     @media screen and (max-height: 720px) and (min-width: 500px)
-      max-width calc(100% - 60px)
+      max-width 100%
 
   .flex
     display flex
     flex-direction column
     justify-content space-between
     height 100%
-    padding 20px 0 0 0
     @media screen and (max-height: 720px) and (min-width: 500px)
       flex-direction row
       align-items center
+      flex-wrap wrap
 
   .display
     display block
+    @media screen and (max-height: 720px) and (min-width: 500px)
+      width 50%
 
   .display > .cover
     width 100%
@@ -115,6 +118,8 @@ body
 
   .controller
     display block
+    @media screen and (max-height: 720px) and (min-width: 500px)
+      width 50%
 
   .controller > .command-center
     display flex
@@ -122,6 +127,8 @@ body
     padding 20px 40px
     @media screen and (min-width: 500px)
       padding 20px 60px
+    @media screen and (max-height: 720px) and (min-width: 500px)
+      padding 20px
 
   .controller > .command-center > .command
     width 60px

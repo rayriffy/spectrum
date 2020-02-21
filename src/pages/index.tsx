@@ -10,8 +10,8 @@ import { Display } from '../../module/display/components'
 const IndexPage: NextPage = props => {
   return (
     <div className='container'>
-      <h1 className='title'>Now Playing</h1>
       <div className='flex'>
+        <h1 className='title'>Now Playing</h1>
         <Display />
         <Controller />
       </div>
